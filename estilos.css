@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background: #022029;
+    font-family: 'Poppins';
+     position: relative; /*medirá 100% del navegador */
+}
+
+
+header{
+    background: rgb(29, 150, 155);
+    width: 100%;
+    /* clear para que no haya elementos flotantes a izq ni derecha */
+    clear: both;
+    /* Propiedad para poner valores */
+    content: '';
+    display: table; /*Para que los elementos HIJOS que tenga FLOAT se MUESTREN NORMALMENTE*/
+    font-size: 20px;
+}
+
+p{
+    margin-left: 100px;
+    padding-top: 5px;
+}
+/* FORMULARIO CENTRADO Y ESTILO */
+.form1{
+    width: 600px;
+    background: #c3c5c7;
+/* padding para queno esté junto el contenido del formulario */
+    padding: 20px;
+/* margin para centrar el form */
+    margin: auto;
+    margin-top: 100px;
+/* Borde curvo */ border-radius: 30px;
+
+}
+
+
+/* TITULO FORMULARIO */
+.form1 h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+/* TEXT FIELDS */
+.controls{
+    font-family: 'Poppins';
+    width: 100%;
+    background: white;
+    border-radius: 20px;
+    
+    padding: 8px; /* Aumenta el tamaño del TextField */
+    margin-bottom: 16px; /* Separa exterior los TextField */
+    border: 1px black solid;
+    font-size: 18px;
+}
+
+
+/* BOTON */
+.form1 .send{
+    width: 100%;
+    background:rgb(26, 134, 138);
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-family: 'Poppins';
+    display: table-cell;
+    vertical-align: middle;
+    transition: 0.2s;
+}
+
+/* Mientras tengo el mouse encima */
+.form1 .send:hover{
+    
+    background:rgb(34, 175, 168);
+}
+
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+
+
+img{
+    width: 60px;
+    /* Posicionar a la  izquierda */
+    float: left;
+    padding: 8px;
+}
+
+nav{
+    float: right;
+}
+
+/* colocar a lo largo el menú */
+nav ul li {
+    /* borra las viñetas */
+    list-style: none;
+    margin-left: 50px;
+    padding: 15px 0;
+    /* los "acostamos" */
+    float: left;
+
+    position: relative;
+}
+
+/* ESTILOS A LOS ENLACES DENTRO DEL MENU */
+nav ul li a{
+    /* Borra el "subrayado" */
+    text-decoration: none;
+    /* color de la fuente */
+    color: whitesmoke;
+    /* tipo de letra negrita */
+    font-weight: bold;
+
+}
+
+/* Efecto que pasará a tener DESPUÉS */
+nav ul li a::before{
+    display: block; /* elemento en BLOQUE que ocupará TODO el ESPACIO de su ELEMENTO PADRE */
+    content: '';
+    width: 0%;
+    background: rgba(200, 205, 207, 0.822);
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: 0.25s;
+}
+
+/* EFECTO para MOUSE ENCIMA */
+nav ul li a:hover:before{
+    width: 100%;
+}
