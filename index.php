@@ -18,6 +18,7 @@
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="https://www.instagram.com/facu_dev/">Instagram</a></li>
+                    <li><a href="#">Contacto</a></li>
                     
                 </ul>
             </nav>
